@@ -81,4 +81,38 @@ body {
     text-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
     line-height: 1.4;
 }
+
+/* дождь */
+.rain-container {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    pointer-events: none;  
+    overflow: hidden;
+    z-index: 5; 
+}
+
+.raindrop {
+    position: absolute;
+    bottom: 100%;
+    background: linear-gradient(180deg, #a0c4ff, transparent);
+    border-radius: 50% / 60%;
+    opacity: 0.5;
+    animation-name: rainFall;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rainFall {
+  0% {
+    transform: translateY(0);
+    opacity: 0.5;
+  }
+  90% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(110vh);
+    opacity: 0;
+  }
+}
 /* END начальная страница */

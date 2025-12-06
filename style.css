@@ -116,3 +116,104 @@ body {
   }
 }
 /* END начальная страница */
+
+/* START О нас */
+.about-section {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  padding: 6rem 1.5rem;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  font-family: 'Orbitron', 'Noto Sans JP', sans-serif;
+}
+
+.about-content {
+  max-width: 850px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.kanji-symbol {
+  font-size: 4rem;
+  color: #ff5e9c;
+  font-family: 'Georgia', serif;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 10px #ff99c8, 0 0 20px #ff2e98;
+  animation: kanjiPulse 5s ease-in-out infinite;
+}
+@keyframes kanjiPulse {
+  0%, 100% {
+    text-shadow: 0 0 10px #ff99c8, 0 0 20px #ff2e98;
+  }
+  50% {
+    text-shadow: 0 0 20px #ff2e98, 0 0 30px #ff007f;
+  }
+}
+
+.about-title {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 2rem;
+  background: linear-gradient(45deg, #6dd5fa, #2980b9);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 8px #54a0ff, 0 0 15px #80caff;
+  animation: shine 3s ease-in-out infinite;
+  letter-spacing: 2px;
+}
+@keyframes shine {
+  0%, 100% {
+    text-shadow: 0 0 8px #54a0ff, 0 0 15px #80caff;
+  }
+  50% {
+    text-shadow: 0 0 15px #00f0ff, 0 0 25px #6dd5fa;
+  }
+}
+
+.about-text {
+  font-size: 1.2rem;
+  line-height: 1.9;
+  color: #cfd9ff;
+  margin-bottom: 1.5rem;
+  text-shadow: 0 0 4px rgba(255, 255, 255, 0.08);
+}
+
+  .about-decor-circle {
+    position: absolute;
+    width: 22rem;
+    height: 22rem;
+    background: radial-gradient(circle, rgba(255, 0, 119, 0.2), transparent 70%);
+    border-radius: 50%;
+    top: -4rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0;
+  }
+
+.sticker {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translateX(-10px);
+  width: 400px;
+  height: 400px;
+  filter: drop-shadow(0 0 10px #0ff) drop-shadow(0 0 20px #0ff);
+  pointer-events: none;
+  transition: filter 0.3s ease;
+  display: block;
+}
+
+.sticker2 {
+  position: absolute;
+  top: 0;      
+  right: 0;    
+  transform: translate(-65px, 40px);
+  pointer-events: none;
+  width: 350px;  
+  height: 250px;
+  filter: drop-shadow(0 0 10px #0ff) drop-shadow(0 0 20px #0ff);
+  display: block;
+}
+/* END О нас */

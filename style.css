@@ -526,3 +526,47 @@ body {
     z-index: 1;
 }
 
+/* START шапка*/
+.site-header {
+    width: 100%;
+    padding: 30px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+    background: rgba(0, 0, 0, 0.55);
+    backdrop-filter: blur(10px);
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.header-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 50px;
+}
+
+.nav-menu a {
+    color: #cfd9ff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.nav-menu a:hover {
+    color: #ff79c6;
+    text-shadow: 0 0 8px #ff79c6aa;
+}
+
+/* END шапка */
+
